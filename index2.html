@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Our School</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<style>
+    @media (max-width: 450px){
+        .review-Section .review img{
+            width: 50px; 
+            border-radius: 5%;
+        }
+    }
+</style>
+<body>
+    <div class="sidenav">
+        
+        <ul>
+             <li><a href="#"><img src="aashraya.jpeg" alt="img" /> </a></li> 
+            <li><a href="#">home </a></li>  
+            <li id="search"> search</li>
+            <li> <a href="#">about </a></li>
+            
+            <li><a href="https://prashraya.org/"> Team ashraya</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="logo">
+            <h1>Aashraya Vidhayala</h1>
+            <img src="download.jpeg">
+            <img src="download 1.jpeg">
+            <p>Support Our Future</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="donation-container">
+            <h2>Make a Donation</h2>
+            <p>Your donation helps provide better education and resources for our students. Thank you for your support!</p>
+
+            <form action="https://www.paypal.com/donate" method="POST">
+                <label for="amount">Choose your donation amount:</label>
+                <select name="amount" id="amount" required>
+                    <option value="50">&#8377; 50</option>
+                    <option value="100">&#8377; 100</option>
+                    <option value="200">&#8377; 200</option>
+                    <option value="500">&#8377; 500</option>
+                    <option value="custom">Custom Amount</option>
+                </select>
+
+                <div class="custom-amount" style="display: none;">
+                    <label for="custom-amount">Enter your custom donation amount:</label>
+                    <input type="number" id="custom-amount" name="custom-amount" placeholder=" Amount" min="1">
+                </div>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <button type="submit">Donate Now</button>
+            </form>
+        </section>
+    </main>
+<div class="review-Section">
+    <h2 style="padding: 20px"> From the kids of Aashraya Vidhayala Indore (M.P)</h2>
+    <div class="review">
+        <img src = "kid1.jpeg" width="200" style="border-radius: 50%;"/>
+        <p> My name is Rohit. I study in class 5 and i am grateful that aashraya vidhayala provided me a place and environment to learn
+            I want to become a doctor with quality free education and supportive teaachers it seems possible.</p>
+
+
+        </div>
+
+        <div class="review">
+            <img src = "kid2.jpeg" width="200" style="border-radius: 50%;"/>
+            <p> My name is Sonam. I study in class 4 and i am grateful that aashraya vidhayala provided me a place and environment to learn and grow.
+                My parents were against me going to school because of the fees of private schools and no government school in our region.
+                I want to become a teacher with quality free education and supportive teaachers it seems possible.</p>
+    
+                
+            </div>
+
+            <div class="review">
+                <img src = "kid4.jpeg" width="200" style="border-radius: 50%;"/>
+                <p> My name is rajesh. I study in class 3 and i am grateful that aashraya vidhayala provided me a place and environment to learn
+                    I am happpy to learn. With quality free education.</p>
+                </div>
+</div>
+
+
+    <footer>
+        <p>&copy; Since 2019 Team Aashraya | All Rights Reserved | contact at XXXX2341</p>
+    </footer>
+
+    <script>
+        const amountSelect = document.getElementById('amount');
+        const customAmountDiv = document.querySelector('.custom-amount');
+
+        amountSelect.addEventListener('change', function() {
+            if (amountSelect.value === 'custom') {
+                customAmountDiv.style.display = 'block';
+            } else {
+                customAmountDiv.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
